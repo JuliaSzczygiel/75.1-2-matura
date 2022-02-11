@@ -24,19 +24,19 @@ string encrypt(string text, int keyA, int keyB){
 }
 
 int main(){
-	ifstream dane("tekst.txt");
-	string slowo;
+	ifstream file("tekst.txt");
+	string word;
 	vector<string> zad1;
 	vector<string> zad2;
-	while(dane >> slowo){
+	while(file >> word){
 	
 		//zad1
-		if(slowo[0] == 'd' && slowo[slowo.length()-1] == 'd'){
-			zad1.push_back(slowo);
+		if(word[0] == 'd' && word[word.length()-1] == 'd'){
+			zad1.push_back(word);
 		}
 		//zad2
-		if(slowo.length() >= 10){
-			zad2.push_back(slowo);
+		if(word.length() >= 10){
+			zad2.push_back(word);
 		}
 	}
 	
