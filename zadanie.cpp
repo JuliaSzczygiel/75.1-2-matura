@@ -23,7 +23,6 @@ string encrypt(string text, int keyA, int keyB){
 	return result;
 }
 
-
 int main(){
 	ifstream dane("tekst.txt");
 	string slowo;
@@ -35,7 +34,6 @@ int main(){
 		if(slowo[0] == 'd' && slowo[slowo.length()-1] == 'd'){
 			zad1.push_back(slowo);
 		}
-		
 		//zad2
 		if(slowo.length() >= 10){
 			zad2.push_back(slowo);
